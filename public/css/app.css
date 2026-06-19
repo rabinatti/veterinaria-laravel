@@ -1,0 +1,145 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f0f7f0;
+            color: #2d2d2d;
+        }
+
+        nav {
+            background-color: #2e7d32;
+            padding: 14px 32px;
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        nav .logo {
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-right: auto;
+        }
+
+        nav a {
+            color: #c8e6c9;
+            text-decoration: none;
+            font-size: 0.95rem;
+            padding: 6px 12px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        nav a:hover {
+            background-color: #1b5e20;
+            color: white;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 32px auto;
+            padding: 0 24px;
+        }
+
+        h1 {
+            color: #2e7d32;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+        }
+
+        thead {
+            background-color: #2e7d32;
+            color: white;
+        }
+
+        th, td {
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid #e8f5e9;
+        }
+
+        tbody tr:hover {
+            background-color: #e8f5e9;
+        }
+
+        a {
+            color: #2e7d32;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        input, select {
+            display: block;
+            width: 100%;
+            padding: 8px 12px;
+            margin: 6px 0 16px 0;
+            border: 1px solid #a5d6a7;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 0.95rem;
+            background: white;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: #2e7d32;
+        }
+
+        label {
+            font-weight: 600;
+            color: #2e7d32;
+            font-size: 0.9rem;
+        }
+
+        button, .btn {
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+            padding: 9px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            font-family: inherit;
+        }
+
+        button:hover {
+            background-color: #1b5e20;
+        }
+
+        button.danger {
+            background-color: #c62828;
+        }
+
+        button.danger:hover {
+            background-color: #8e0000;
+        }
+
+        p.error {
+            color: #c62828;
+            font-size: 0.85rem;
+            margin-top: -12px;
+            margin-bottom: 12px;
+        }
+
+        .actions {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            margin-bottom: 20px;
+        }
