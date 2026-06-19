@@ -62,4 +62,10 @@ class PetController extends Controller
         $pet->delete();
         return redirect('/pets');
     }
+
+    public function petsPorCliente(Cliente $cliente)
+    {
+        $pets = Pet::where('idCliente', $cliente->id)->get();
+        return view('pets.index', compact('pets'));
+    }
 }
